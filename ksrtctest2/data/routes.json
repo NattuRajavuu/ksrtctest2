@@ -1,0 +1,43 @@
+{
+  "routes": [
+    {
+      "id": "route1",
+      "name": "Route 1: City Center - North",
+      "stops": ["stopA", "stopB", "stopC", "stopD"]
+    },
+    {
+      "id": "route2",
+      "name": "Route 2: East - West",
+      "stops": ["stopE", "stopF", "stopB", "stopG"]
+    }
+  ],
+  "stops": {
+    "stopA": { "name": "City Center", "x": 10, "y": 10 },
+    "stopB": { "name": "Central Station", "x": 40, "y": 50 },
+    "stopC": { "name": "North Park", "x": 20, "y": 80 },
+    "stopD": { "name": "North End", "x": 5, "y": 95 },
+    "stopE": { "name": "East Market", "x": 90, "y": 40 },
+    "stopF": { "name": "Library", "x": 70, "y": 50 },
+    "stopG": { "name": "West Plaza", "x": 10, "y": 50 }
+  },
+  "vehicles": [
+    {
+      "id": "bus101",
+      "routeId": "route1",
+      "currentStopIndex": 0,
+      "nextStopIndex": 1,
+      "position": { "x": 10, "y": 10 },
+      "status": "On Time",
+      "speed": 1
+    },
+    {
+      "id": "bus202",
+      "routeId": "route2",
+      "currentStopIndex": 0,
+      "nextStopIndex": 1,
+      "position": { "x": 90, "y": 40 },
+      "status": "Delayed",
+      "speed": 0.8
+    }
+  ]
+}
