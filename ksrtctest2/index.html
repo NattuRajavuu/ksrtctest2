@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Transport Tracking</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Public Transport Tracking</h1>
+    </header>
+
+    <main>
+        <div id="map-container">
+            <canvas id="map-canvas"></canvas>
+            <!-- Vehicles will be added here by JavaScript -->
+        </div>
+
+        <div id="controls-container">
+            <div class="control-group">
+                <label for="route-select">Select Route:</label>
+                <select id="route-select">
+                    <option value="">Loading routes...</option>
+                </select>
+            </div>
+
+            <div id="info-container">
+                <h2>Route Information</h2>
+                <div id="route-info">
+                    <p>Select a route to see details.</p>
+                </div>
+
+                <h2>Vehicle Status</h2>
+                <div id="vehicle-status">
+                    <p>No vehicle selected.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
